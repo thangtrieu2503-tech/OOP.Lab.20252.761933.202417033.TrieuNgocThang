@@ -1,0 +1,9 @@
+answers.txt
+
+Question 1: What happens if users choose “Cancel”?
+If the user clicks “Cancel”, the program will still show “No”.
+This happens because the program only checks if the user chooses “Yes”, otherwise it treats all other cases as “No”. So “Cancel” is not handled separately.
+
+Question 2: How to customize the options to users?
+We can change the buttons by using `JOptionPane.showOptionDialog` instead of `showConfirmDialog`.
+With this method, we can create our own options like “Yes/No” or “I do/I don’t” by putting them into an array and passing it to the dialog.
