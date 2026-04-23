@@ -14,6 +14,10 @@ public class Aims {
                 "Aladin", "Animation", 18.99f);
         anOrder.addDigitalVideoDisc(dvd3);
 
+        System.out.println("DVD 1 id: " + dvd1.getId());
+        System.out.println("DVD 2 id: " + dvd2.getId());
+        System.out.println("DVD 3 id: " + dvd3.getId());
+
         anOrder.displayCart();
 
         System.out.print("Total cost is: ");
