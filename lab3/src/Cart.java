@@ -93,10 +93,26 @@ public class Cart {
     }
 
     public void displayCart() {
-        System.out.println("Items in cart:");
+//        System.out.println("Items in cart:");
+//        for (int i = 0; i < qtyOrdered; i++) {
+//            System.out.println((i + 1) + ". " + itemsOrdered[i].getTitle()
+//                    + " - " + itemsOrdered[i].getCost() + " $");
+        //6.1
+        System.out.println("***********************CART***********************");
+        System.out.println("Ordered Items:");
+
+        float totalCost = 0;
+
         for (int i = 0; i < qtyOrdered; i++) {
-            System.out.println((i + 1) + ". " + itemsOrdered[i].getTitle()
-                    + " - " + itemsOrdered[i].getCost() + " $");
+            System.out.println((i + 1) + ". "
+                    + itemsOrdered[i].getTitle()
+                    + " - "
+                    + itemsOrdered[i].getCost() + " $");
+
+            totalCost += itemsOrdered[i].getCost();
+        }
+
+        System.out.println("Total cost: " + totalCost + " $");
+        System.out.println("***************************************************");
         }
     }
-}
