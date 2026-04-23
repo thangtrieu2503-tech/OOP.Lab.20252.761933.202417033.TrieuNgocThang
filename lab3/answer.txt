@@ -1,0 +1,6 @@
+2.1
+I prefer using varargs because it is more concise and convenient. It allows passing multiple arguments directly without the need to create an array, making the code easier to read and use.
+3.
+ After the call of swap(jungleDVD, cinderellaDVD), the titles of the two DVDs remain unchanged because Java passes parameters by value. The swap method only swaps the copies of the references, not the original references.
+ After the call of changeTitle(jungleDVD, cinderellaDVD.getTitle()), the title of jungleDVD changes because the method modifies the object that jungleDVD refers to by using dvd.setTitle(title).
+Java is a pass-by-value programming language. When passing objects, Java passes the value of the reference, not the object itself.
