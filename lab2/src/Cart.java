@@ -75,6 +75,18 @@ public class Cart {
         return null;
     }
 
+//    public void addDigitalVideoDisc(DigitalVideoDisc[] dvdList) {
+//        for (DigitalVideoDisc dvd : dvdList) {
+//            addDigitalVideoDisc(dvd);
+//        }
+//    }
+
+    public void addDigitalVideoDisc(DigitalVideoDisc... dvds) {
+        for (DigitalVideoDisc dvd : dvds) {
+            addDigitalVideoDisc(dvd);
+        }
+    }
+
     public void displayCart() {
         System.out.println("Items in cart:");
         for (int i = 0; i < qtyOrdered; i++) {
